@@ -1,10 +1,14 @@
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import UserContextProvider from "./context/UserContextProvider";
+
 function App() {
   return (
-    <>
-      <h1 className="bg-green-600 text-center text-white">
-        HALLO JULLE WASBERE
-      </h1>
-    </>
+    <UserContextProvider>
+      <h1>React Context API</h1>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   );
 }
 
