@@ -20,14 +20,19 @@ function Login() {
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Username"
+        autoFocus
+        className="bg-blue-600 text-white font-bold p-1"
       />{" "}
       <input
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
+        className="bg-blue-600 text-white font-bold mr-5 p-1"
       />
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit} className="bg-red-950 text-white p-1">
+        Submit
+      </button>
     </div>
   );
 }
