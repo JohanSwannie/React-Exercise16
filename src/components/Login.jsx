@@ -12,6 +12,11 @@ function Login() {
     setUser({ username, password });
   };
 
+  const clearFields = () => {
+    setPassword("");
+    setUsername("");
+  };
+
   return (
     <div>
       <h2>Login</h2>
@@ -30,8 +35,17 @@ function Login() {
         placeholder="Password"
         className="bg-blue-600 text-white font-bold mr-5 p-1"
       />
-      <button onClick={handleSubmit} className="bg-red-600 text-white p-1">
+      <button
+        onClick={handleSubmit}
+        className="bg-red-600 text-white mr-5 pr-5 pl-5 pt-1 pb-1"
+      >
         Submit
+      </button>
+      <button
+        onClick={clearFields}
+        className="bg-green-600 text-white pr-5 pl-5 pt-1 pb-1"
+      >
+        clear
       </button>
     </div>
   );
