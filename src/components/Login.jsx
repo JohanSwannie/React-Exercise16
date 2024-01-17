@@ -30,7 +30,7 @@ function Login() {
         placeholder="Password"
         className="bg-blue-600 text-white font-bold mr-5 p-1"
       />
-      <button onClick={handleSubmit} className="bg-red-950 text-white p-1">
+      <button onClick={handleSubmit} className="bg-red-600 text-white p-1">
         Submit
       </button>
     </div>
